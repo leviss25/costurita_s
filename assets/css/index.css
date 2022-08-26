@@ -77,13 +77,25 @@ html{
     background-size:cover;
     height: 85vh;
     /* height: 100%; */
+    position: relative;
 }
 
-.container .container__slider .slider{
-    /* max-width: 1440px; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.container__slider .forma{
+    color: #FFFFFF;
+    font-family: 'Comfortaa';
+    font-size: 4.3em;
+    background-image: url(../images/forma.png);
+    height: 222px;
+    width: 636px;
+    position: absolute;
+    bottom: 6rem;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__slider .forma__texto{
+    padding-top: 2rem;
 }
 /*****  end header  *****/
 
