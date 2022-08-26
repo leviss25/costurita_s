@@ -1,0 +1,289 @@
+/**IMPORT**/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+/**NORMALIZE**/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**GLOBALS**/
+html{
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 62.5%;
+}
+
+/***VARIABLES***/
+:root{
+    --principal: #FFF5F4; --efectoPrincipal: #f77626;
+    --secondary: #FFB8B8; --efectoSecondary: #036F82;
+    --negro: #1A1A1A;
+    --gris: #848484;
+    /* --blanco: #f3f3f3; --negro: #0f0f0f;
+    --cTituloTour:#696c6d; */
+}
+/**HELPERS**/
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*****    header    *****/
+.header-c{
+    background-color: var(--principal);
+}
+.container__navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--principal);
+}
+.container__navbar .navbar{
+    width: 90%;
+}
+
+.container__navbar .navbar .navbar__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar__menu .navbar__item{
+    list-style-type: none;
+    margin: 0 2%;
+}
+
+.navbar__menu .navbar__item:hover .navbar__item__link{
+    color: var(--secondary);
+}
+
+.navbar__menu .navbar__item .navbar__item__link{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Comfortaa';
+}
+
+.container__slider{
+    /* max-width: 1440px; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/slider1.png); */
+    background-image: url(../images/slider1.png);
+    background-repeat: no-repeat;
+    background-position: none center;
+    background-size:cover;
+    height: 85vh;
+    /* height: 100%; */
+}
+
+.container .container__slider .slider{
+    /* max-width: 1440px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*****  end header  *****/
+
+/*****    main    *****/
+
+main{
+    margin: 6rem 0;
+}
+
+.container .services{
+    max-width: 90%;
+    margin: 8em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .services .services__item{
+    width: 30%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container .services .services__item .services__item__img{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+.container .services .services__item .services__item__img .img__obj{
+    height: auto;
+    width: auto;
+}
+.subtitle{
+    /* font-family: ; */
+    margin: 1em 0;
+}
+.subtitle:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+.container .services .services__item .services__item__text{
+    padding: 0 1em;
+}
+
+/* .top-pre{
+    height: 57px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.top{
+    /* background-color: var(--secondary); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: none center;
+    padding: 12em 0;
+}
+.top-Products{
+    /* background-color: var(--principal); */
+    color: var(--principal);
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.top-Products .top-Products__title{
+    text-align: center;
+    padding: 6rem;
+    font-size: 3em;
+    font-family: 'Comfortaa';
+    /* font-weight: 550; */
+}
+
+.top-Products .container-products{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-Products .container-products .top-Products__item{
+    width: 30%;
+    height: 26.2em;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.top-Products .container-products .top-Products__item .top-Products__item__text{
+    font-size: 2.5em;
+    font-weight:bold;
+}
+.top-Products .star{
+    z-index: 1;
+    position: absolute;
+    left: -126px;
+    top: -80px;
+}
+/* .bottom-pre{
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.history{
+    margin-top: 20em;
+    margin-bottom: 5em;
+}
+.history .nuestra{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.history .nuestra .nuestra__cari{
+    width: 45%;
+}
+
+.history .nuestra .nuestra__historia{
+    width: 45%;
+    font-size: 2em;
+}
+
+.history .nuestra .nuestra__historia .historia__titulo{
+    font-family: 'Comfortaa';
+    font-weight: 850;
+    margin: 2rem 0;
+}
+
+.history .nuestra .nuestra__historia .historia__parrafo{
+    margin-top: 2rem;
+}
+
+.close-com{
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.history .ig{
+  display: flex;
+  justify-content: center;
+  padding: 8rem 7rem 4rem 7rem;
+}
+.history .ig .ig_text__seguinos{
+    font-size: 1.6em;
+}
+.history .ig .ig_text__costu{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: var(--negro);
+}
+/*****  end main  *****/
+/*****    footer    *****/
+footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: none center;
+}
+footer .footer{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8em;
+    font-size: 1.6em;
+}
+
+.footer .footer__seccion{
+    font-family: 'Comfortaa';
+    color: var(--negro);
+}
+.footer__navegation .navegation__item{
+    list-style-type: none;
+    margin: 0 2%;
+}
+.footer__navegation .navegation__item a{
+    text-decoration: none;
+    color: var(--negro);
+}
+.footer .footer__social .footer_social__logo{
+    display: flex;
+    justify-content: center;
+    height: 33px;
+}
+footer .copy{
+    padding: 1rem;
+}
+footer .copy .copy__text{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--gris);
+}
+/*****  end footer  *****/
