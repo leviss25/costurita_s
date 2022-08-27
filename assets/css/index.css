@@ -332,9 +332,14 @@ footer .footer{
     font-size: 1.6em;
 }
 
+.format{
+    width: 30%;
+}
 .footer .footer__seccion{
     font-family: 'Comfortaa';
     color: var(--negro);
+    text-align: center;
+    padding-bottom: 1em;
 }
 .footer__navegation .navegation__item{
     list-style-type: none;
@@ -343,6 +348,10 @@ footer .footer{
 .footer__navegation .navegation__item a{
     text-decoration: none;
     color: var(--negro);
+}
+.footer__navegation .navegation__item:hover a{
+    /* color: var(--secondary); */
+    text-decoration: underline;
 }
 .footer .footer__social .footer_social__logo{
     display: flex;
