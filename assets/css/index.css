@@ -255,6 +255,67 @@ main{
     text-decoration: none;
     color: var(--negro);
 }
+.titulos{
+    font-family: 'Comfortaa';
+    font-size: 3em;
+    font-weight: 850;
+    margin: 2rem 0;
+}
+.parrafos{
+    font-family: 'Montserrat';
+    font-size: 1.6em;
+    text-align: center;
+    padding: 2rem;
+    max-width: 75%;
+}
+.nuestros-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.nuestros-productos .productos{
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    grid-gap: 25px 15px;
+}
+.nuestros-productos .productos .producto{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 0.5px #FFE7E4;
+    border-radius: 20px;
+}
+.nuestros-productos .productos .producto:hover{
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+}
+
+.producto .producto__img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.producto .producto__img:hover{
+    /* filter: blur(2px); */
+    transform: rotate(0deg)
+    scale(1.1);
+}
+.producto .producto__titulo{
+    font-family: 'Comfortaa';
+    font-size: 1.4em;
+    text-align: center;
+    height: 50px;
+    align-content: center;
+    padding-top: 15px;
+}
+
+.nuestros-productos .productos .producto:hover .producto__titulo{
+    color: var(--secondary);
+}
 /*****  end main  *****/
 /*****    footer    *****/
 footer{
