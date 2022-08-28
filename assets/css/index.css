@@ -291,8 +291,12 @@ main{
 .nuestros-productos .productos .producto:hover{
     border: 1px solid var(--secondary);
     cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 950;
 }
-
+.producto .producto__imagen{
+    overflow: hidden;
+}
 .producto .producto__img{
     width: 100%;
     vertical-align: top;
@@ -313,8 +317,59 @@ main{
     padding-top: 15px;
 }
 
-.nuestros-productos .productos .producto:hover .producto__titulo{
+.producto .producto__titulo a{
+    text-decoration: none;
+    color: var(--negro);
+}
+.nuestros-productos .productos .producto:hover .producto__titulo a{
     color: var(--secondary);
+}
+
+.item{
+    display: flex;
+}
+.item__descripcion{
+    padding: 0 3em;
+}
+.titulos1{
+    font-family: 'Comfortaa';
+    font-size: 3em;
+    font-weight: 850;
+}
+.parrafos1{
+    font-family: 'Montserrat';
+    font-size: 2em;
+    padding: 2rem 0;
+}
+.item__descripcion__detalle{
+    font-size: 1.55em;
+}
+.subtitulos{
+    padding: 1em 0;
+}
+.parrafos2{
+    padding-bottom: 1em;
+}
+.descipcion__colores{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 1em;
+}
+.descipcion__colores .descipcion__colores__color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7.5rem;
+}
+.descipcion__colores__circulo{
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+}
+.descipcion__colores__nombre{
+    font-size: 1.1rem;
+    text-align: center;
 }
 /*****  end main  *****/
 /*****    footer    *****/
