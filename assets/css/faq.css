@@ -1,0 +1,115 @@
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: var(--principal);
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    text-align: left;
+    outline: none;
+   
+    margin-top: 20px;
+    font-family: 'Comfortaa';
+    font-weight: 850;
+    font-size: 1.6em;
+
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  }
+
+
+  .collapsible:after {
+    content: url(../images/down-icon-faq.png); /* Unicode character for "plus" sign (+) */
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: url(../images/up-icon-faq.png); /* Unicode character for "minus" sign (-) */
+  }
+   .carousel-item.active:after {
+    content: none; /* Unicode character for "minus" sign (-) */
+  }
+   .carousel-indicators .active:after {
+    content: none; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: var(--secondary)
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--negro);
+  }
+  
+
+
+
+.item__descripcion-faq{
+width: 100%;
+}
+
+
+
+.img-faq{
+    width: 70%;
+    border-radius: 9px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;;
+ 
+
+    
+}
+
+
+.img-contacto{
+  width: 90%;
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;;
+
+
+  
+}
+
+.subtitulos-faq{
+    margin-top: 50px;
+    font-size: 1.6em;
+}
+
+.parrafos2-faq{
+    padding-bottom: 1em;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.ig-faq{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+}
+
+.ig-logo-faq img{
+width: 80%;
+}
+

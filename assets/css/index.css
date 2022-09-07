@@ -1,6 +1,8 @@
 /**IMPORT**/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url(faq.css);
+
 /**NORMALIZE**/
 *,
 *::after,
@@ -45,15 +47,15 @@ html{
     width: 90%;
 }
 
-.container__navbar .navbar .navbar__menu{
-    display: flex;
+/* .container__navbar .navbar .navbar__menu{
+   display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 .navbar__menu .navbar__item{
     list-style-type: none;
-    margin: 0 2%;
+    margin: 6px 2%;
 }
 
 .navbar__menu .navbar__item:hover .navbar__item__link{
@@ -66,8 +68,12 @@ html{
     font-size: 1.5em;
     font-weight: 600;
     font-family: 'Comfortaa';
+    white-space: nowrap;
 }
-
+.navbar-collapse{
+    width: 100%;
+    justify-content: center;
+}
 .container__slider{
     /* max-width: 1440px; */
     /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/slider1.png); */
@@ -119,6 +125,7 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: 'Comfortaa';
 }
 
 .container .services .services__item .services__item__img{
@@ -136,12 +143,13 @@ main{
     /* font-family: ; */
     margin: 1em 0;
 }
-.subtitle:hover{
+/* .subtitle:hover{
     color: var(--secondary);
     cursor: pointer;
-}
+} */
 .container .services .services__item .services__item__text{
-    padding: 0 1em;
+    padding: 0.7em;
+    font-family: 'Montserrat', Sans-serif;
 }
 
 /* .top-pre{
@@ -224,6 +232,9 @@ main{
 .history .nuestra .nuestra__historia{
     width: 45%;
     font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .history .nuestra .nuestra__historia .historia__titulo{
@@ -254,6 +265,12 @@ main{
     font-size: 1.8em;
     text-decoration: none;
     color: var(--negro);
+}
+.history .ig:hover .icon_insta{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(100%) saturate(2346%) hue-rotate(290deg) brightness(105%) contrast(101%);
+}
+.history .ig:hover .ig_text .ig_text__costu{
+    color: var(--secondary);
 }
 .titulos{
     font-family: 'Comfortaa';
@@ -424,3 +441,41 @@ footer .copy .copy__text{
     color: var(--gris);
 }
 /*****  end footer  *****/
+.deskhide{
+    display: none;
+}
+@media (max-width:991.98px) {
+    .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+    .navbar>.container-fluid{
+        justify-content: center !important;
+    }
+    .container-fluid button.navbar-toggler{
+            position: absolute;
+    left: 0;
+        border: none;
+            top: 7px;
+    }
+    .navbar-toggler-icon {
+    width: 2.5em !important;
+    height: 2.5em !important;
+}
+.item {
+    flex-direction: column;
+}
+.deskhide{
+    display: block;
+}.mobhide{
+    display: none;
+}
+.order1{
+    text-align: center;
+}
+.ig-faq {
+    justify-content: center;
+}
+.order3{
+    padding: 15px
+}
+}
