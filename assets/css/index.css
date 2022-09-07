@@ -1,6 +1,6 @@
 /**IMPORT**/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700;800;900&display=swap');
 @import url(faq.css);
 
 /**NORMALIZE**/
@@ -258,6 +258,13 @@ main{
   justify-content: center;
   padding: 8rem 7rem 4rem 7rem;
 }
+.history .ig .ig_caja{
+    display: inline-block;
+}
+.history .ig .ig_caja .ig_caja__flex{
+    display: flex;
+    justify-content: center;
+}
 .history .ig .ig_text__seguinos{
     font-size: 1.6em;
 }
@@ -266,10 +273,10 @@ main{
     text-decoration: none;
     color: var(--negro);
 }
-.history .ig:hover .icon_insta{
+.history .ig .ig_caja .ig_caja__flex:hover .icon_insta{
     filter: brightness(0) saturate(100%) invert(94%) sepia(100%) saturate(2346%) hue-rotate(290deg) brightness(105%) contrast(101%);
 }
-.history .ig:hover .ig_text .ig_text__costu{
+.history .ig .ig_caja .ig_caja__flex:hover .ig_text .ig_text__costu{
     color: var(--secondary);
 }
 .titulos{
@@ -284,6 +291,7 @@ main{
     text-align: center;
     padding: 2rem;
     max-width: 75%;
+    font-weight: normal;
 }
 .nuestros-productos{
     display: flex;
@@ -332,6 +340,7 @@ main{
     height: 50px;
     align-content: center;
     padding-top: 15px;
+    font-weight: bold;
 }
 
 .producto .producto__titulo a{
@@ -356,16 +365,18 @@ main{
 .parrafos1{
     font-family: 'Montserrat';
     font-size: 2em;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 .item__descripcion__detalle{
+    font-family: 'Montserrat';
     font-size: 1.55em;
 }
 .subtitulos{
-    padding: 1em 0;
+    padding: 0.5em 0;
+    font-weight:550 ;
 }
 .parrafos2{
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 .descipcion__colores{
     display: flex;
