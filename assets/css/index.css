@@ -394,6 +394,11 @@ main{
     font-size: 3em;
     font-weight: 850;
 }
+.titulos11{
+    font-family: 'Comfortaa';
+    font-size: 3em;
+    font-weight: 850;
+}
 .parrafos1{
     font-family: 'Montserrat';
     font-size: 2em;
@@ -537,6 +542,9 @@ footer .copy .copy__text{
     .item .parrafos1{
         display: none;
     }
+    .parrafos {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width:768px){
     .container .services {
@@ -580,6 +588,10 @@ footer .copy .copy__text{
         width: -webkit-fill-available;
     }
     .titulos1 {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    .titulos11 {
         text-align: center;
         font-size: 2.4em;
     }
