@@ -199,6 +199,7 @@ main{
     z-index: 2;
 }
 .top-Products .container-products .top-Products__item .top-Products__item__text{
+    font-family: 'Montserrat';
     font-size: 2.5em;
     font-weight:bold;
     text-align: center;
